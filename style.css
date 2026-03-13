@@ -709,3 +709,119 @@ transition:0.3s;
 .about-section a:hover{
 background:#f9a825;
 }
+/* ===== LOGIN & SIGNUP CONTAINER ===== */
+
+.login-container,
+.signup-container{
+
+display:flex;
+justify-content:center;
+align-items:center;
+height:85vh;
+
+}
+
+
+/* ===== FORM BOX ===== */
+
+.login-box{
+
+background:white;
+padding:40px;
+width:380px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+text-align:center;
+
+}
+
+
+/* ===== TITLE ===== */
+
+.login-box h2{
+
+margin-bottom:25px;
+color:#1b5e20;
+font-size:28px;
+font-weight:600;
+
+}
+
+
+/* ===== INPUT FIELDS ===== */
+
+.login-box input{
+
+width:100%;
+padding:12px 14px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:14px;
+outline:none;
+transition:0.3s;
+
+}
+
+.login-box input:focus{
+
+border-color:#2e7d32;
+box-shadow:0 0 5px rgba(46,125,50,0.3);
+
+}
+
+
+/* ===== BUTTON ===== */
+
+.form-btn{
+
+width:100%;
+padding:12px;
+margin-top:15px;
+
+background:#2e7d32;
+color:white;
+
+border:none;
+border-radius:8px;
+
+font-size:16px;
+font-weight:600;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.form-btn:hover{
+
+background:#1b5e20;
+transform:translateY(-2px);
+box-shadow:0 6px 12px rgba(0,0,0,0.2);
+
+}
+
+
+/* ===== SIGNUP / LOGIN TEXT ===== */
+
+.signup-text{
+
+margin-top:18px;
+font-size:14px;
+
+}
+
+.signup-text a{
+
+color:#2e7d32;
+font-weight:600;
+text-decoration:none;
+
+}
+
+.signup-text a:hover{
+
+text-decoration:underline;
+
+}
