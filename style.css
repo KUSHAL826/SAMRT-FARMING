@@ -1307,14 +1307,24 @@ width:95%;
 
 }
 
-
-/* ============================= */
 /* SMALL MOBILE PHONES */
-/* ============================= */
 
 @media (max-width:600px){
 
+/* GENERAL */
+body{
+padding:0;
+margin:0;
+}
+
 /* NAVBAR */
+.navbar{
+flex-direction:column;
+align-items:center;
+padding:10px 15px;
+gap:10px;
+}
+
 .logo{
 font-size:18px;
 }
@@ -1326,10 +1336,22 @@ height:40px;
 
 .nav-links{
 flex-direction:column;
+width:100%;
+align-items:center;
 gap:10px;
 }
 
+.nav-links li a{
+width:90%;
+text-align:center;
+}
+
 /* HERO */
+.hero{
+height:auto;
+padding:60px 20px;
+}
+
 .hero h1{
 font-size:24px;
 }
@@ -1338,44 +1360,94 @@ font-size:24px;
 font-size:15px;
 }
 
+/* ABOUT */
+.about{
+padding:40px 15px;
+}
+
+/* FEATURES */
+.features{
+flex-direction:column;
+align-items:center;
+}
+
+.card{
+width:90%;
+}
+
 /* GALLERY */
+.gallery{
+padding:40px 15px;
+}
+
 .gallery-container{
 grid-template-columns:1fr;
+gap:15px;
 }
 
-/* CROPS */
+/* STRATEGY CROPS */
 .crop-list{
+grid-template-columns:1fr;
+padding:20px;
+}
+
+/* CROP DETAILS */
+.crop-details{
+width:90%;
+margin:30px auto;
+padding:20px;
+}
+
+/* FORMS */
+.form-grid{
 grid-template-columns:1fr;
 }
 
-/* CARD */
-.card{
+input,
+select{
 width:100%;
 }
 
-/* CROP CARD */
-.crop-card{
-width:100%;
+/* LOGIN */
+.login-box{
+width:90%;
+padding:25px;
 }
 
-/* FORM */
-input,select{
-width:100%;
+/* CONTAINERS */
+.container{
+width:90%;
+margin:20px auto;
 }
 
-/* PROGRESS BAR */
-.progress{
-width:100%;
+/* DASHBOARD */
+.dashboard-container{
+width:90%;
+padding:25px;
 }
 
 /* TABLE */
 table{
 width:100%;
-font-size:14px;
+font-size:13px;
 }
 
 th,td{
 padding:8px;
+}
+
+/* FOOTER */
+.footer-container{
+flex-direction:column;
+text-align:center;
+}
+
+.footer-col{
+width:100%;
+}
+
+.progress{
+width:100%;
 }
 
 }
