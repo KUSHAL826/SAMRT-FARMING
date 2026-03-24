@@ -19,7 +19,6 @@ $_SESSION['expected_production'] = $_POST['expected_production'];
 header("Location: crop-suggestion.php");
 exit();
 
-
 }
 else{
 

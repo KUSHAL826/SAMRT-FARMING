@@ -1,15 +1,22 @@
 <?php
 
-$host = "sql101.infinityfree.com";
-$user = "if0_41398072";
-$password = "KUShal136yn"; 
-$database = "if0_41398072_smart_farming";
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 
-$conn = mysqli_connect($host,$user,$password,$database);
+$host = "sql100.infinityfree.com";
+$user = "if0_41467967";   
+$pass = "KUShal12yn";    
+$db   = "if0_41467967_smart_farming"; 
 
-if(!$conn){
-    die("Connection failed: " . mysqli_connect_error());
+
+$conn = mysqli_connect($host, $user, $pass, $db);
+
+
+if (!$conn) {
+    die("Database Connection Failed: " . mysqli_connect_error());
 }
 
+
+date_default_timezone_set("Asia/Kolkata");
 ?>

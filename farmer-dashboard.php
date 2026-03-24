@@ -34,6 +34,7 @@ $crops[] = $row['crop_name'];
 <li><a href="farmer-dashboard.php">Farmer</a></li>
 <li><a href="admin-login.html">Admin</a></li>
 <li><a href="about.html">About Us</a></li>
+
 </ul>
 </nav>
 
@@ -135,7 +136,27 @@ echo "<option>$crop</option>";
 
 </div>
 
+<div class="disease-detection">
 
+<h2>Crop Disease Detection (AI)</h2>
+
+<p class="disease-info">
+This feature helps farmers identify crop diseases early by analyzing leaf images using Machine Learning.
+Simply upload a clear photo of the crop leaf and the system will detect possible diseases and suggest treatments.
+</p>
+
+<ul class="disease-points">
+<li>Upload a clear image of the crop leaf</li>
+<li>AI model analyzes the image</li>
+<li>System detects disease</li>
+<li>Shows treatment suggestions</li>
+</ul>
+
+<a href="crop-disease.php" class="detect-page-btn">
+Start Disease Detection
+</a>
+
+</div>
 <script>
 
 /* crop list from PHP */
